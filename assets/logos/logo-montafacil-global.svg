@@ -1,1 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGold" x1="0" y1="0" x2="1200" y2="1200">
+      <stop offset="0%" stop-color="#00AEEF"/>
+      <stop offset="100%" stop-color="#F5B700"/>
+    </linearGradient><linearGradient id="darkBg" x1="0" y1="0" x2="0" y2="1200">
+  <stop offset="0%" stop-color="#08101D"/>
+  <stop offset="100%" stop-color="#02060D"/>
+</linearGradient>
 
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+  <feMerge>
+    <feMergeNode in="coloredBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+  </defs>  <!-- Background -->  <rect width="1200" height="1200" rx="80" fill="url(#darkBg)"/>  <!-- Outer Ring -->  <circle cx="600" cy="500" r="360" stroke="url(#blueGold)" stroke-width="18" filter="url(#glow)"/>  <!-- House -->  <path d="M420 360L600 230L780 360" stroke="#00AEEF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="565" y="300" width="70" height="70" rx="8" stroke="#00AEEF" stroke-width="10"/>  <!-- MG Letters --><text x="320" y="640" font-family="Montserrat, Arial" font-size="340" font-weight="900" fill="#00AEEF">M</text> <text x="610" y="640" font-family="Montserrat, Arial" font-size="340" font-weight="900" fill="#F5B700">G</text>
+
+  <!-- Truck Icon -->  <g transform="translate(230,620)">
+    <rect x="0" y="40" width="120" height="60" rx="8" stroke="#00AEEF" stroke-width="10"/>
+    <rect x="120" y="55" width="60" height="45" rx="6" stroke="#00AEEF" stroke-width="10"/>
+    <circle cx="45" cy="120" r="16" fill="#00AEEF"/>
+    <circle cx="145" cy="120" r="16" fill="#00AEEF"/>
+  </g>  <!-- Furniture Icon -->  <g transform="translate(480,760)">
+    <rect x="0" y="0" width="90" height="140" rx="8" stroke="#F5B700" stroke-width="10"/>
+    <line x1="45" y1="0" x2="45" y2="140" stroke="#F5B700" stroke-width="8"/><rect x="120" y="55" width="70" height="85" rx="8" stroke="#F5B700" stroke-width="10"/>
+<line x1="135" y1="85" x2="175" y2="85" stroke="#F5B700" stroke-width="6"/>
+
+  </g>  <!-- Screwdriver -->  <g transform="translate(720,760)">
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#F5B700" stroke-width="10"/>
+    <path d="M-15 0L15 0L0 -30Z" fill="#F5B700"/>
+  </g>  <!-- Brand Name -->  <text x="600" y="1010" text-anchor="middle" font-family="Montserrat, Arial" font-size="110" font-weight="900" fill="white" letter-spacing="4">
+    MONTAFÁCIL
+  </text>  <text x="600" y="1085" text-anchor="middle" font-family="Montserrat, Arial" font-size="48" font-weight="600" fill="#00AEEF" letter-spacing="12">
+    GLOBAL
+  </text>
+</svg>
