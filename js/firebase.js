@@ -1,21 +1,22 @@
 // =====================================================
 // MONTAFÁCIL GLOBAL
-// Firebase V1 Oficial
-// Curadoria: Décio Coelho + IA Generativa
+// Firebase.js Master
+// Conexão oficial Firebase + Auth + Firestore
+// Curadoria: Décio Coelho
+// Mega Parceria: Curadoria Viracopos + Núcleo de Inovação & IA Generativa + OpenAI + ChatGPT
 // =====================================================
 
-// Firebase SDKs
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
 
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import {
+  getAuth
+} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import {
+  getFirestore
+} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
-
-// =====================================================
-// CONFIG FIREBASE
-// =====================================================
-
+// CONFIGURAÇÃO OFICIAL DO FIREBASE
 const firebaseConfig = {
   apiKey: "AIzaSyDOwNUtdXtqxWd_VMLjpEBb9yGkACNrIIU",
   authDomain: "montafacil-global.firebaseapp.com",
@@ -25,25 +26,15 @@ const firebaseConfig = {
   appId: "1:336823292108:web:2c527dc46a99a2c6b0b269"
 };
 
-
-// =====================================================
 // INICIALIZAÇÃO
-// =====================================================
-
 const app = initializeApp(firebaseConfig);
 
-
-// =====================================================
 // SERVIÇOS
-// =====================================================
-
+const auth = getAuth(app);
 const db = getFirestore(app);
 
-const auth = getAuth(app);
+// LOG DE VALIDAÇÃO
+console.log("🔥 Firebase MontaFácil Global conectado com sucesso.");
 
-
-// =====================================================
-// EXPORTS
-// =====================================================
-
-export { app, db, auth };
+// EXPORTAÇÃO GLOBAL
+export { app, auth, db };
