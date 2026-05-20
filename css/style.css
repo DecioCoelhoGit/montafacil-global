@@ -1035,3 +1035,60 @@ main {
   opacity: 1 !important;
   transform: none !important;
 }
+
+/* PATCH EMERGENCIAL V5.5 — restaura rolagem total */
+
+html,
+body {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 100% !important;
+  max-height: none !important;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+  position: static !important;
+  touch-action: auto !important;
+}
+
+body {
+  display: block !important;
+}
+
+main,
+section,
+.hero,
+.cinematic-hero,
+.hero-content {
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  position: relative !important;
+}
+
+.cinematic-hero {
+  display: block !important;
+}
+
+.hero-video,
+.hero-overlay {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.reveal,
+.reveal.active {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.topbar {
+  position: sticky !important;
+  top: 0 !important;
+}
+
+body {
+  padding-top: 0 !important;
+}
