@@ -948,3 +948,52 @@ body {
     width: min(240px, 68vw);
   }
 }
+
+/* PATCH V5.3 — Hero compacto e correção geral */
+
+.hero {
+  min-height: auto !important;
+  height: auto !important;
+  padding: 26px 5% 48px !important;
+  display: block !important;
+}
+
+.cinematic-hero {
+  min-height: auto !important;
+  height: auto !important;
+}
+
+.hero-overlay,
+.hero-video {
+  display: none !important;
+}
+
+.hero-content {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  max-width: 920px;
+}
+
+.hero-logo-main {
+  width: min(230px, 65vw) !important;
+  margin: 0 auto 18px !important;
+}
+
+.eyebrow {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 104px !important;
+  }
+
+  .hero {
+    padding-top: 22px !important;
+    padding-bottom: 42px !important;
+  }
+
+  .hero-logo-main {
+    width: min(210px, 62vw) !important;
+  }
+}
