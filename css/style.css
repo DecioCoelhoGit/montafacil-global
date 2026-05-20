@@ -1092,3 +1092,88 @@ section,
 body {
   padding-top: 0 !important;
 }
+
+
+/* PATCH V5.7 — Header fixo + tema + acessibilidade */
+
+.topbar{
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 99999 !important;
+  background: rgba(2,8,20,.96) !important;
+  backdrop-filter: blur(18px);
+}
+
+section{
+  scroll-margin-top: 150px !important;
+}
+
+/* Botões flutuantes */
+.quick-tools{
+  position: fixed;
+  right: 14px;
+  bottom: 18px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quick-tools button{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,255,180,.35);
+  background: rgba(0,20,35,.85);
+  color: #38e86b;
+  font-size: 20px;
+  box-shadow: 0 0 18px rgba(0,255,180,.28);
+}
+
+/* Acessibilidade */
+body.access-on{
+  font-size: 1.12rem;
+  line-height: 1.85;
+}
+
+body.access-on p,
+body.access-on small{
+  color: #fff !important;
+}
+
+body.access-on .card,
+body.access-on .start-box{
+  border: 2px solid #38e86b !important;
+}
+
+/* Tema claro */
+body.light-mode{
+  background: #f4f7fb !important;
+  color: #06111f !important;
+}
+
+body.light-mode .section,
+body.light-mode footer,
+body.light-mode .hero{
+  background: #f4f7fb !important;
+  color: #06111f !important;
+}
+
+body.light-mode .card,
+body.light-mode .start-box{
+  background: #ffffff !important;
+  color: #06111f !important;
+  border: 1px solid rgba(0,80,130,.18) !important;
+}
+
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode small{
+  color: #06111f !important;
+}
+
+body.light-mode .topbar{
+  background: rgba(255,255,255,.96) !important;
+}
