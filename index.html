@@ -23,6 +23,10 @@
 </head>
 
 <body>
+  <div class="quick-tools">
+  <button onclick="toggleTheme()" title="Claro/Escuro">☀️</button>
+  <button onclick="toggleAccess()" title="Acessibilidade">♿</button>
+  </div>
 
   <div class="quick-tools">
   <button onclick="toggleTheme()" title="Claro/Escuro">☀️</button>
@@ -314,6 +318,16 @@ window.addEventListener("scroll", () => {
 
 });
     </script>
+
+<script>
+function toggleTheme(){
+  document.body.classList.toggle("light-mode");
+}
+
+function toggleAccess(){
+  document.body.classList.toggle("access-on");
+}
+</script>
 
 <script>
 function toggleTheme(){
