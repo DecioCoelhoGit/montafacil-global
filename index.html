@@ -230,7 +230,46 @@
   </footer>
 
   <script type="module" src="js/app.js"></script>
-  
+
+  <script>
+/* ==========================================
+   ACESSIBILIDADE
+========================================== */
+
+const accessBtn = document.getElementById("accessBtn");
+
+accessBtn.addEventListener("click", () => {
+  document.body.classList.toggle("accessibility-mode");
+});
+
+/* ==========================================
+   TRILÍNGUE
+========================================== */
+
+const translations = {
+  pt: {
+    hero: "Ecossistema Inteligente de Serviços, Logística e Integração Comercial"
+  },
+
+  en: {
+    hero: "Intelligent Ecosystem for Services, Logistics and Commercial Integration"
+  },
+
+  es: {
+    hero: "Ecosistema Inteligente de Servicios, Logística e Integración Comercial"
+  }
+};
+
+function setLang(lang){
+  console.log("Idioma alterado:", lang);
+
+  const heroText = document.querySelector(".hero-text");
+
+  if(heroText){
+    heroText.innerText = translations[lang].hero;
+  }
+}
+  </script>
 </body>
 </html>
 
