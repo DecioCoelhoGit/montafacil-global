@@ -918,3 +918,33 @@ body {
     width: min(260px, 74vw);
   }
 }
+
+/* PATCH V5.2 — Corrige espaço vazio no Hero */
+
+.hero {
+  min-height: auto !important;
+  padding: 34px 5% 60px !important;
+}
+
+.hero-content {
+  margin-top: 0 !important;
+}
+
+.hero-logo-main {
+  width: min(280px, 72vw);
+  margin: 0 auto 22px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 28px !important;
+  }
+
+  .hero-content {
+    margin-top: 0 !important;
+  }
+
+  .hero-logo-main {
+    width: min(240px, 68vw);
+  }
+}
