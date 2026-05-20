@@ -661,3 +661,81 @@ footer::before {
     line-height: 1.7;
   }
 }
+
+/* =====================================================
+   PATCH V4 — ACESSIBILIDADE + TRILÍNGUE
+===================================================== */
+
+.access-btn{
+  position:fixed;
+  right:18px;
+  bottom:22px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  border:none;
+  z-index:9999;
+
+  background:linear-gradient(135deg,#00ff99,#00ccff);
+  color:#001;
+  font-size:28px;
+  font-weight:bold;
+
+  box-shadow:
+    0 0 18px rgba(0,255,180,.5),
+    0 0 35px rgba(0,140,255,.35);
+
+  cursor:pointer;
+  transition:.3s;
+}
+
+.access-btn:hover{
+  transform:scale(1.08);
+}
+
+.lang-switch{
+  position:fixed;
+  left:14px;
+  bottom:22px;
+  z-index:9999;
+
+  display:flex;
+  gap:8px;
+}
+
+.lang-switch button{
+  border:none;
+  padding:10px 14px;
+  border-radius:14px;
+
+  background:rgba(0,0,0,.78);
+  color:#00ff88;
+
+  border:1px solid rgba(0,255,140,.25);
+
+  font-size:12px;
+  font-weight:700;
+
+  backdrop-filter:blur(10px);
+
+  cursor:pointer;
+  transition:.3s;
+}
+
+.lang-switch button:hover{
+  background:#00ff88;
+  color:#000;
+}
+
+body.accessibility-mode{
+  font-size:1.12rem;
+  line-height:1.9;
+}
+
+body.accessibility-mode p{
+  color:#ffffff;
+}
+
+body.accessibility-mode .card{
+  border:2px solid #00ffcc;
+}
