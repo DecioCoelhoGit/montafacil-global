@@ -997,3 +997,41 @@ body {
     width: min(210px, 62vw) !important;
   }
 }
+
+/* PATCH V5.4 — destrava rolagem mobile */
+
+html,
+body {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+}
+
+main {
+  display: block !important;
+  height: auto !important;
+  min-height: auto !important;
+  overflow: visible !important;
+}
+
+.hero,
+.cinematic-hero {
+  position: relative !important;
+  display: block !important;
+  height: auto !important;
+  min-height: auto !important;
+  overflow: visible !important;
+}
+
+.hero-content {
+  position: relative !important;
+  display: block !important;
+  overflow: visible !important;
+}
+
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
