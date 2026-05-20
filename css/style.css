@@ -881,3 +881,40 @@ button:hover,
 
   border-radius:20px;
 }
+
+/* PATCH V5.1 — Corrige logo hero e fixa header */
+
+.topbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+body {
+  padding-top: 118px;
+}
+
+.hero::before {
+  display: none !important;
+}
+
+.hero-logo-main {
+  width: min(320px, 78vw);
+  height: auto;
+  margin: 0 auto 22px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 28px rgba(0,195,255,.35));
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 105px;
+  }
+
+  .hero-logo-main {
+    width: min(260px, 74vw);
+  }
+}
