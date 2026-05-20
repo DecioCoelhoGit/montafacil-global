@@ -497,3 +497,167 @@ footer small::after {
 .final-banner{
   margin-top:90px;
 }
+
+/* =====================================================
+   PATCH V3 — AJUSTES FINOS LANDING PAGE
+   MontaFácil Global
+===================================================== */
+
+section {
+  scroll-margin-top: 135px;
+}
+
+.topbar {
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.45);
+}
+
+.holo-banner {
+  max-width: 1180px;
+  margin: 38px auto 34px;
+}
+
+.holo-banner img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.section {
+  padding-top: 82px;
+  padding-bottom: 82px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+}
+
+.cards {
+  margin-top: 28px;
+}
+
+.card {
+  min-height: 210px;
+}
+
+.flow {
+  margin-top: 34px;
+}
+
+footer {
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  margin: 0 auto 42px;
+  background: linear-gradient(90deg, transparent, #f4c542, transparent);
+}
+
+/* MOBILE REFINADO */
+
+@media (max-width: 900px) {
+  section {
+    scroll-margin-top: 118px;
+  }
+
+  .topbar {
+    padding: 8px 4% 10px;
+    gap: 4px;
+  }
+
+  .brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .topbar nav {
+    gap: 10px;
+    padding: 6px 0 2px;
+  }
+
+  .topbar nav a {
+    font-size: 14px;
+    padding: 7px 12px;
+  }
+
+  .hero {
+    min-height: 86vh;
+    padding-top: 54px;
+  }
+
+  .hero::before {
+    background-size: min(360px, 84vw);
+    background-position: center 18px;
+  }
+
+  .hero-content {
+    margin-top: min(320px, 72vw);
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 10vw, 46px);
+  }
+
+  .hero h2 {
+    font-size: clamp(18px, 6vw, 26px);
+  }
+
+  .hero-text {
+    font-size: 17px;
+  }
+
+  .section {
+    padding: 64px 5%;
+  }
+
+  .section-header h2 {
+    font-size: clamp(30px, 10vw, 42px);
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .holo-banner {
+    margin: 28px auto 28px;
+  }
+
+  .holo-banner img {
+    border-radius: 18px;
+    max-height: none;
+  }
+
+  .card,
+  .start-box {
+    padding: 24px;
+    border-radius: 22px;
+    min-height: auto;
+  }
+
+  .card h3,
+  .start-box h3 {
+    font-size: 22px;
+  }
+
+  .card p,
+  .start-box p {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 70px 5%;
+  }
+
+  footer small {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}
