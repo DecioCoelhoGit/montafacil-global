@@ -24,32 +24,10 @@
 
 <body>
   <div class="quick-tools">
-    <button onclick="toggleTheme()">☀️</button>
-    <button onclick="toggleAccess()">♿</button>
+    <button onclick="toggleTheme()" title="Claro/Escuro">☀️</button>
+    <button onclick="toggleAccess()" title="Acessibilidade Premium">♿</button>
   </div>
 
-  <div class="lang-switch">
-    <button>PT</button>
-    <button>EN</button>
-    <button>ES</button>
-  </div>
-  
-  <div class="quick-tools">
-  <button onclick="toggleTheme()" title="Claro/Escuro">☀️</button>
-  <button onclick="toggleAccess()" title="Acessibilidade">♿</button>
-  </div>
-
-  <div class="quick-tools">
-  <button onclick="toggleTheme()" title="Claro/Escuro">☀️</button>
-  <button onclick="toggleAccess()" title="Acessibilidade">♿</button>
-  </div>
-
-  <!-- BOTÃO ACESSIBILIDADE -->
-  <button id="accessBtn" class="access-btn">
-    ♿
-  </button>
-
-  <!-- SELETOR DE IDIOMA -->
   <div class="lang-switch">
     <button onclick="setLang('pt')">PT</button>
     <button onclick="setLang('en')">EN</button>
@@ -96,7 +74,7 @@
         <h1>MONTAFÁCIL GLOBAL</h1>
 
         <h2 data-i18n="hero-subtitle">
-          Ecossistema Inteligente de Serviços, Logística e Integração Comercial
+  Ecossistema Inteligente de Serviços, Logística e Integração Comercial
         </h2>
 
         <p class="hero-text">
@@ -397,6 +375,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
+<script src="js/script.js"></script>⁸
 </body>
 </html>
 
