@@ -832,3 +832,51 @@ body.access-on{
 section{
   scroll-margin-top:130px !important;
 }
+
+.topbar{
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 99999 !important;
+  background: rgba(2,8,20,.96) !important;
+}
+
+section{
+  scroll-margin-top: 130px !important;
+}
+
+body.access-premium{
+  filter: contrast(1.18) saturate(1.2);
+}
+
+body.access-premium .card,
+body.access-premium .start-box{
+  border: 2px solid #00ff88 !important;
+  box-shadow: 0 0 28px rgba(0,255,136,.35) !important;
+}
+
+body.access-premium p,
+body.access-premium h1,
+body.access-premium h2,
+body.access-premium h3{
+  color: #ffffff !important;
+}
+
+body.light-mode{
+  background: #f4f7fb !important;
+  color: #06111f !important;
+}
+
+body.light-mode section,
+body.light-mode footer,
+body.light-mode .hero{
+  background: #f4f7fb !important;
+  color: #06111f !important;
+}
+
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode small{
+  color: #06111f !important;
+}
