@@ -807,3 +807,28 @@ body.light-mode{
   background:#f4f7fb;
   color:#06111f;
 }
+
+body.light-mode,
+body.light-mode main,
+body.light-mode section,
+body.light-mode footer{
+  background:#f4f7fb !important;
+  color:#06111f !important;
+}
+
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode small{
+  color:#06111f !important;
+}
+
+body.access-on{
+  font-size:1.15rem !important;
+  line-height:1.9 !important;
+}
+
+section{
+  scroll-margin-top:130px !important;
+}
