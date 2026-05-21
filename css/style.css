@@ -880,3 +880,93 @@ body.light-mode h3,
 body.light-mode small{
   color: #06111f !important;
 }
+
+/* PATCH FINAL — MontaFácil Global */
+
+html{
+  scroll-behavior:smooth;
+}
+
+.topbar{
+  position:sticky !important;
+  top:0 !important;
+  z-index:99999 !important;
+  background:rgba(2,8,20,.96) !important;
+  backdrop-filter:blur(18px);
+}
+
+section{
+  scroll-margin-top:130px !important;
+}
+
+.quick-tools{
+  position:fixed;
+  right:14px;
+  bottom:22px;
+  z-index:999999;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.quick-tools button{
+  width:54px;
+  height:54px;
+  border-radius:50%;
+  border:1px solid rgba(0,255,136,.55);
+  background:rgba(0,20,35,.92);
+  color:#00ff88;
+  font-size:24px;
+  box-shadow:0 0 24px rgba(0,255,136,.45);
+}
+
+.lang-switch{
+  position:fixed;
+  left:12px;
+  bottom:22px;
+  z-index:999999;
+  display:flex;
+  gap:8px;
+}
+
+.lang-switch button{
+  padding:10px 13px;
+  border-radius:18px;
+  border:1px solid rgba(0,255,136,.45);
+  background:rgba(0,20,35,.9);
+  color:#00ff88;
+  font-weight:800;
+}
+
+body.access-premium{
+  filter:contrast(1.22) saturate(1.25);
+}
+
+body.access-premium .card,
+body.access-premium .start-box{
+  border:2px solid #00ff88 !important;
+  box-shadow:0 0 30px rgba(0,255,136,.38) !important;
+}
+
+body.light-mode,
+body.light-mode main,
+body.light-mode section,
+body.light-mode footer{
+  background:#f4f7fb !important;
+  color:#06111f !important;
+}
+
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode small{
+  color:#06111f !important;
+}
+
+.footer-contact{
+  margin-top:24px;
+  padding-top:18px;
+  border-top:1px solid rgba(207,174,61,.35);
+  font-size:.95rem;
+}
