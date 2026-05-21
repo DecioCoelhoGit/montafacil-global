@@ -755,3 +755,55 @@ section {
   top: 0;
   z-index: 9999;
 }
+
+html{
+  scroll-behavior:smooth;
+}
+
+.quick-tools{
+  position:fixed;
+  right:14px;
+  bottom:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:99999;
+}
+
+.quick-tools button{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  border:none;
+  background:#041427;
+  color:#38e86b;
+  font-size:22px;
+  box-shadow:0 0 18px rgba(0,255,180,.35);
+}
+
+.lang-switch{
+  position:fixed;
+  left:12px;
+  bottom:20px;
+  display:flex;
+  gap:8px;
+  z-index:99999;
+}
+
+.lang-switch button{
+  padding:10px 12px;
+  border-radius:14px;
+  border:none;
+  background:#041427;
+  color:#38e86b;
+}
+
+body.access-on{
+  font-size:1.12rem;
+  line-height:1.85;
+}
+
+body.light-mode{
+  background:#f4f7fb;
+  color:#06111f;
+}
