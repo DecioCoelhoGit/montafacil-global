@@ -1,125 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-  // =========================
-  // MENU MOBILE
-  // =========================
-
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".nav-menu");
-
-  if (menuToggle && navMenu) {
-
-    menuToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-    });
-
-    document.querySelectorAll(".nav-menu a").forEach(link => {
-      link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-      });
-    });
-
-  }
-
-  // =========================
-  // TEMA CLARO/ESCURO
-  // =========================
-
-  const themeBtn = document.querySelector("#theme-toggle");
-
-  if(themeBtn){
-
-    const savedTheme =
-      localStorage.getItem("montafacil-theme") || "dark";
-
-    applyTheme(savedTheme);
-
-    themeBtn.addEventListener("click", () => {
-
-      const current =
-        document.body.classList.contains("light-mode")
-          ? "light"
-          : "dark";
-
-      const next =
-        current === "dark"
-          ? "light"
-          : "dark";
-
-      applyTheme(next);
-
-    });
-
-  }
-
-  function applyTheme(theme){
-
-    document.body.classList.remove(
-      "light-mode",
-      "dark-mode"
-    );
-
-    document.body.classList.add(`${theme}-mode`);
-
-    localStorage.setItem(
-      "montafacil-theme",
-      theme
-    );
-
-  }
-
-  // =========================
-  // ACESSIBILIDADE
-  // =========================
-
-  const accessBtn =
-    document.querySelector("#access-toggle");
-
-  if(accessBtn){
-
-    accessBtn.addEventListener("click", () => {
-      document.body.classList.toggle("high-access");
-    });
-
-  }
-
-  // =========================
-  // IDIOMAS
-  // =========================
-
-  window.setLanguage = function(lang){
-
-    console.log("Idioma:", lang);
-
+  window.toggleTheme = function () {
+    document.body.classList.toggle("light-mode");
   };
 
-  // =========================
-  // SCROLL SUAVE
-  // =========================
+  window.toggleAccess = function () {
+    document.body.classList.toggle("access-premium");
+  };
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  window.setLang = function (lang) {
+    const dict = {
+      pt: "Ecossistema Inteligente de Serviços, Logística e Integração Comercial",
+      en: "Intelligent Ecosystem for Services, Logistics and Commercial Integration",
+      es: "Ecosistema Inteligente de Servicios, Logística e Integración Comercial"
+    };
 
-    anchor.addEventListener("click", function(e){
+    const el = document.querySelector("[data-i18n='hero-subtitle']");
+    if (el) el.textContent = dict[lang];
+  };
 
-      e.preventDefault();
-
-      const target =
-        document.querySelector(
-          this.getAttribute("href")
-        );
-
-      if(target){
-
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-
+  document.querySelectorAll("a[href^='#']").forEach(link => {
+    link.addEventListener("click", e => {
+      const target = document.querySelector(link.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-
     });
-
   });
-
 });
+0
 
