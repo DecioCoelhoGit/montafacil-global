@@ -40,12 +40,14 @@
       <span>MONTAFÁCIL GLOBAL</span>
     </div>
 
-    <<nav class="menu">
-       <a href="#problema">Problema</a>
-       <a href="#solucao">Solução</a>
-       <a href="#diferenciais">Diferenciais</a>
-       <a href="#start">Start</a>
-       <a href="#mercado">Mercado</a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#problema">Problema</a>
+      <a href="#solucao">Solução</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#start">Start</a>
+      <a href="#mercado">Mercado</a>
     </nav>
 
     <header class="hero cinematic-hero">
@@ -253,65 +255,7 @@
 
   <script type="module" src="js/app.js"></script>
 
-  <script>
-/* ==========================================
-   ACESSIBILIDADE
-========================================== */
-
-const accessBtn = document.getElementById("accessBtn");
-
-accessBtn.addEventListener("click", () => {
-  document.body.classList.toggle("accessibility-mode");
-});
-
-/* ==========================================
-   TRILÍNGUE
-========================================== */
-
-const translations = {
-  pt: {
-    hero: "Ecossistema Inteligente de Serviços, Logística e Integração Comercial"
-  },
-
-  en: {
-    hero: "Intelligent Ecosystem for Services, Logistics and Commercial Integration"
-  },
-
-  es: {
-    hero: "Ecosistema Inteligente de Servicios, Logística e Integración Comercial"
-  }
-};
-
-function setLang(lang){
-  console.log("Idioma alterado:", lang);
-
-  const heroText = document.querySelector(".hero-text");
-
-  if(heroText){
-    heroText.innerText = translations[lang].hero;
-  }
-}
-  </script>
-
-    <script>
-const reveals = document.querySelectorAll(".reveal");
-
-window.addEventListener("scroll", () => {
-
-  reveals.forEach(reveal => {
-
-    const windowHeight = window.innerHeight;
-    const revealTop = reveal.getBoundingClientRect().top;
-
-    if(revealTop < windowHeight - 80){
-      reveal.classList.add("active");
-    }
-
-  });
-
-});
-    
-<script src="js/script.js"></script>⁸
+  <script src="js/script.js"></script>⁸
 </body>
 </html>
 
