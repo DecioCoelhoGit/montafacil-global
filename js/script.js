@@ -2,13 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
   window.toggleTheme = () => document.body.classList.toggle("light-mode");
   window.toggleAccess = () => document.body.classList.toggle("access-premium");
 
-  window.setLang = (lang) => {
-    const textos = {
-      pt: "Ecossistema Inteligente de Serviços, Logística e Integração Comercial",
-      en: "Intelligent Ecosystem for Services, Logistics and Commercial Integration",
-      es: "Ecosistema Inteligente de Servicios, Logística e Integración Comercial"
-    };
+  window.setLang = function (lang) {
+  document.querySelectorAll("[data-pt][data-en][data-es]").forEach((el) => {
+    const text = el.getAttribute(`data-${lang}`);
+    if (text) el.textContent = text;
+  });
 
+  document.documentElement.lang = lang;
+  localStorage.setItem("montafacil_lang", lang);
+};
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("montafacil_lang") || "pt";
+  setLang(savedLang);
+});
+  
     document.querySelectorAll("[data-i18n='hero-subtitle']").forEach(el => {
       el.textContent = textos[lang] || textos.pt;
     });
