@@ -970,3 +970,42 @@ body.light-mode small{
   border-top:1px solid rgba(207,174,61,.35);
   font-size:.95rem;
 }
+
+
+.secondary-menu {
+  display: none !important;
+}
+
+.float-tools,
+.quick-tools {
+  position: fixed;
+  right: 12px;
+  bottom: 18px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.float-tools button,
+.quick-tools button {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 255, 140, 0.8);
+  background: rgba(2, 12, 28, 0.92);
+  color: #00ff88;
+  font-weight: 800;
+  font-size: 15px;
+  box-shadow: 0 0 18px rgba(0, 255, 140, 0.45);
+}
+
+footer,
+.site-footer {
+  position: relative !important;
+  bottom: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+  margin-top: 40px;
+  padding-bottom: 32px;
+}
