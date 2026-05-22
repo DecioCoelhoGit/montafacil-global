@@ -67,3 +67,18 @@ document.addEventListener("DOMContentLoaded", () => {
   color: #ffd24a;
   border-color: rgba(255, 210, 74, 0.55);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  window.toggleTheme = function () {
+    document.body.classList.toggle("light-mode");
+  };
+
+  window.toggleAccess = function () {
+    document.body.classList.toggle("access-premium");
+  };
+
+  window.setLang = function (lang) {
+    document.documentElement.lang = lang;
+    alert("Idioma selecionado: " + lang.toUpperCase());
+  };
+});
