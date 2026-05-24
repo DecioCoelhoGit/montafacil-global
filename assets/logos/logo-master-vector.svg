@@ -1,1 +1,109 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
 
+  <!-- Background -->
+  <circle cx="512" cy="512" r="470" fill="#05070D"/>
+
+  <!-- Outer Ring -->
+  <circle cx="512" cy="512" r="455"
+    stroke="url(#ringGradient)"
+    stroke-width="24"/>
+
+  <!-- House -->
+  <path d="M360 310 L512 190 L664 310"
+    stroke="#00AEEF"
+    stroke-width="20"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <rect x="485" y="235" width="18" height="18" fill="#00AEEF"/>
+  <rect x="520" y="235" width="18" height="18" fill="#00AEEF"/>
+  <rect x="485" y="270" width="18" height="18" fill="#00AEEF"/>
+  <rect x="520" y="270" width="18" height="18" fill="#00AEEF"/>
+
+  <!-- Letter M -->
+  <path d="M250 650 V360 H340 L512 575 L684 360 H774 V650"
+    fill="url(#mGradient)"/>
+
+  <!-- Letter G -->
+  <path d="M680 360
+           C820 360 900 450 900 560
+           C900 690 800 780 670 780
+           C540 780 450 690 450 560
+           C450 430 550 340 680 340
+           L680 450
+           C610 450 560 500 560 560
+           C560 620 610 670 680 670
+           C740 670 790 630 790 570
+           H690 V500 H900"
+        fill="url(#gGradient)"/>
+
+  <!-- Truck -->
+  <rect x="110" y="570" width="130" height="90"
+    rx="12"
+    stroke="#00AEEF"
+    stroke-width="12"/>
+
+  <path d="M240 590 L300 590 L340 640 L340 660 L240 660"
+    stroke="#00AEEF"
+    stroke-width="12"
+    fill="none"/>
+
+  <circle cx="170" cy="690" r="20"
+    stroke="#00AEEF"
+    stroke-width="10"/>
+
+  <circle cx="290" cy="690" r="20"
+    stroke="#00AEEF"
+    stroke-width="10"/>
+
+  <!-- Furniture -->
+  <rect x="390" y="730" width="120" height="140"
+    rx="8"
+    stroke="#F5B700"
+    stroke-width="10"/>
+
+  <line x1="450" y1="730" x2="450" y2="870"
+    stroke="#F5B700"
+    stroke-width="8"/>
+
+  <rect x="560" y="770" width="70" height="100"
+    rx="6"
+    stroke="#F5B700"
+    stroke-width="8"/>
+
+  <line x1="575" y1="805" x2="615" y2="805"
+    stroke="#F5B700"
+    stroke-width="6"/>
+
+  <!-- Screwdriver -->
+  <path d="M720 760 V860"
+    stroke="#F5B700"
+    stroke-width="10"
+    stroke-linecap="round"/>
+
+  <path d="M700 860 H740"
+    stroke="#F5B700"
+    stroke-width="10"
+    stroke-linecap="round"/>
+
+  <!-- Gradients -->
+  <defs>
+
+    <linearGradient id="ringGradient" x1="100" y1="100" x2="924" y2="924">
+      <stop offset="0%" stop-color="#00AEEF"/>
+      <stop offset="100%" stop-color="#F5B700"/>
+    </linearGradient>
+
+    <linearGradient id="mGradient" x1="250" y1="360" x2="774" y2="650">
+      <stop offset="0%" stop-color="#00AEEF"/>
+      <stop offset="100%" stop-color="#005B96"/>
+    </linearGradient>
+
+    <linearGradient id="gGradient" x1="450" y1="340" x2="900" y2="780">
+      <stop offset="0%" stop-color="#FFD54A"/>
+      <stop offset="100%" stop-color="#F5B700"/>
+    </linearGradient>
+
+  </defs>
+
+</svg>
