@@ -1,0 +1,158 @@
+/* =========================================
+   MONTAFÁCIL GLOBAL
+   ANIMAÇÕES CINEMATOGRÁFICAS
+========================================= */
+
+/* REVEAL ON SCROLL */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(80px);
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* GLOW CINEMATOGRÁFICO */
+
+.glow-cinematic {
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+    0% {
+        box-shadow:
+            0 0 10px rgba(0,255,170,0.2),
+            0 0 20px rgba(0,150,255,0.2);
+    }
+
+    50% {
+        box-shadow:
+            0 0 25px rgba(0,255,170,0.5),
+            0 0 45px rgba(0,150,255,0.4);
+    }
+
+    100% {
+        box-shadow:
+            0 0 10px rgba(0,255,170,0.2),
+            0 0 20px rgba(0,150,255,0.2);
+    }
+}
+
+/* BOTÕES PREMIUM */
+
+.btn-cinematic {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.btn-cinematic:hover {
+
+    transform: translateY(-4px) scale(1.02);
+
+    box-shadow:
+        0 0 20px rgba(0,255,170,0.5),
+        0 0 40px rgba(0,150,255,0.4);
+}
+
+/* EFEITO SHINE */
+
+.btn-cinematic::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 120%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.25),
+            transparent
+        );
+
+    transition: all 0.8s ease;
+}
+
+.btn-cinematic:hover::before {
+    left: 120%;
+}
+
+/* CARDS */
+
+.card-cinematic {
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+
+    will-change: transform;
+}
+
+.card-cinematic:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.02);
+
+    box-shadow:
+        0 0 25px rgba(0,255,170,0.3),
+        0 0 45px rgba(0,150,255,0.25);
+}
+
+/* IMAGENS HOLOGRÁFICAS */
+
+.holo-banner img {
+
+    transition:
+        transform 1.2s ease,
+        filter 1.2s ease;
+}
+
+.holo-banner img:hover {
+
+    transform: scale(1.03);
+
+    filter:
+        brightness(1.08)
+        saturate(1.15);
+}
+
+/* TÍTULOS */
+
+h1, h2, h3 {
+
+    animation:
+        fadeCinema 1.5s ease;
+}
+
+@keyframes fadeCinema {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
