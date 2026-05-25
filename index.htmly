@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MontaFácil Global | Ecossistema Inteligente de Serviços</title>
+
+  <meta name="description" content="MontaFácil Global — ecossistema inteligente de montagem, desmontagem, transporte, logística integrada e marketplace especializado." />
+
+  <meta property="og:title" content="MontaFácil Global | Ecossistema Inteligente de Serviços" />
+  <meta property="og:description" content="Plataforma inteligente de montagem, desmontagem, transporte, marketplace e integração comercial." />
+ 
+
+  <meta property="og:image" content="https://deciocoelhogit.github.io/montafacil-global/assets/holograms/holo-compartilhamento-master.png" />
+<meta name="twitter:image" content="https://deciocoelhogit.github.io/montafacil-global/assets/holograms/holo-compartilhamento-master.png" />
+
+  <meta property="og:url" content="https://deciocoelhogit.github.io/montafacil-global/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/style.css" /> <link rel="stylesheet" href="css/animations.css">  
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logos/logo-master-gold-blue.png" alt="MontaFácil Global">
+    <span>MONTAFÁCIL GLOBAL</span>
+  </div>
+
+  <nav class="main-nav">
+    <a href="#problema" data-pt="Problema" data-en="Problem" data-es="Problema">Problema</a>
+    <a href="#solucao" data-pt="Solução" data-en="Solution" data-es="Solución">Solução</a>
+    <a href="#diferenciais" data-pt="Diferenciais" data-en="Differentials" data-es="Diferenciales">Diferenciais</a>
+    <a href="#mercado" data-pt="Mercado" data-en="Market" data-es="Mercado">Mercado</a>
+    <a href="#start" data-pt="Start" data-en="Start" data-es="Inicio">Start</a>
+  </nav>
+</header>
+
+<div class="quick-tools">
+  <button onclick="setLang('pt')">PT</button>
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('es')">ES</button>
+  <button onclick="toggleTheme()">☀️</button>
+  <button onclick="toggleAccess()">♿</button>
+</div>
+
+<main>
+
+<section id="hero" class="hero">
+  <img class="hero-logo-main" src="assets/logos/logo-master-gold-blue.png" alt="MontaFácil Global">
+
+  <p class="eyebrow" data-pt="Tech • Logística • Marketplace • IA" data-en="Tech • Logistics • Marketplace • AI" data-es="Tech • Logística • Marketplace • IA">
+    Tech • Logística • Marketplace • IA
+  </p>
+
+  <h1>MONTAFÁCIL GLOBAL</h1>
+
+  <h2 data-pt="Ecossistema Inteligente de Serviços, Logística e Integração Comercial" data-en="Intelligent Ecosystem for Services, Logistics and Commercial Integration" data-es="Ecosistema Inteligente de Servicios, Logística e Integración Comercial">
+    Ecossistema Inteligente de Serviços, Logística e Integração Comercial
+  </h2>
+
+  <p class="hero-text" data-pt="Uma plataforma preparada para integrar montagem, desmontagem, transporte, marketplace especializado e expansão tecnológica." data-en="A platform designed to integrate assembly, disassembly, transportation, specialized marketplace and technological expansion." data-es="Una plataforma preparada para integrar montaje, desmontaje, transporte, marketplace especializado y expansión tecnológica.">
+    Uma plataforma preparada para integrar montagem, desmontagem, transporte, marketplace especializado e expansão tecnológica.
+  </p>
+
+  <div class="hero-actions">
+    <a class="btn-primary btn-cinematic glow-cinematic" href="#solucao" data-pt="Conhecer a Solução" data-en="Discover the Solution" data-es="Conocer la Solución">Conhecer a Solução</a>
+    <a class="btn-secondary btn-cinematic glow-cinematic" href="#start" data-pt="Start da Operação" data-en="Operation Start" data-es="Inicio de Operación">Start da Operação</a>
+  </div>
+</section>
+
+<section id="problema" class="reveal">
+  <div class="section-header">
+    <span>01</span>
+    <h2 data-pt="O Problema" data-en="The Problem" data-es="El Problema">O Problema</h2>
+  </div>
+
+  <div class="holo-banner">
+    <img src="assets/holograms/holo-problema-master.png" alt="Mercado fragmentado">
+  </div>
+
+  <p class="lead" data-pt="O mercado ainda é fragmentado. O cliente precisa procurar montador, transporte e negociar tudo separadamente." data-en="The market is still fragmented. Customers need to find assemblers, transportation and negotiate everything separately." data-es="El mercado todavía está fragmentado. El cliente necesita buscar montador, transporte y negociar todo por separado.">
+    O mercado ainda é fragmentado. O cliente precisa procurar montador, transporte e negociar tudo separadamente.
+  </p>
+</section>
+
+<section id="solucao" class="reveal">
+  <div class="section-header">
+    <span>02</span>
+    <h2 data-pt="A Solução" data-en="The Solution" data-es="La Solución">A Solução</h2>
+  </div>
+
+  <div class="holo-banner">
+    <img src="assets/holograms/holo-solucao-master.png" alt="Fluxo integrado">
+  </div>
+
+  <div class="flow">
+    <div>📦<strong>Solicitação</strong></div>
+    <div>🔧<strong>Desmontagem</strong></div>
+    <div>🚛<strong>Transporte</strong></div>
+    <div>🛠️<strong>Montagem</strong></div>
+    <div>⭐<strong>Finalização</strong></div>
+  </div>
+</section>
+
+<section id="diferenciais" class="reveal">
+  <div class="section-header">
+    <span>03</span>
+    <h2 data-pt="Diferenciais" data-en="Differentials" data-es="Diferenciales">Diferenciais</h2>
+  </div>
+
+  <div class="holo-banner">
+    <img src="assets/holograms/holo-diferenciais-master.png" alt="Diferenciais MontaFácil">
+  </div>
+
+  <div class="cards">
+    <article class="card card-cinematic reveal"><h3>Logística Integrada</h3><p>Desmontagem, transporte e montagem em fluxo único.</p></article>
+    <article class="card card-cinematic reveal"><h3>Marketplace Especializado</h3><p>Profissionais, serviços e parceiros reunidos.</p></article>
+    <article class="card card-cinematic reveal"><h3>Integração Comercial</h3><p>Conexão futura com lojas e fornecedores.</p></article>
+    <article class="card card-cinematic reveal"><h3>Preparada para IA</h3><p>Base pronta para automações e inteligência operacional.</p></article>
+  </div>
+</section>
+
+<section id="mercado" class="reveal">
+  <div class="section-header">
+    <span>04</span>
+    <h2 data-pt="Oportunidade de Mercado" data-en="Market Opportunity" data-es="Oportunidad de Mercado">Oportunidade de Mercado</h2>
+  </div>
+
+  <div class="holo-banner">
+    <img src="assets/holograms/holo-mercado-master.png" alt="Oportunidade de mercado">
+  </div>
+</section>
+
+<section id="compartilhamento" class="section reveal">
+  <div class="section-header">
+    <span>06</span>
+    <h2 data-pt="Compartilhamento Inteligente" data-en="Smart Sharing" data-es="Compartición Inteligente">
+      Compartilhamento Inteligente
+    </h2>
+  </div>
+
+  <div class="holo-banner">
+    <img 
+      src="assets/holograms/holo-compartilhamento-master.png" 
+      alt="Compartilhamento inteligente em redes sociais"
+      loading="lazy"
+    >
+  </div>
+
+  <p class="lead"
+     data-pt="A MontaFácil Global foi preparada para gerar impacto visual, engajamento e presença digital premium em redes sociais."
+     data-en="MontaFácil Global was designed to create visual impact, engagement and premium digital presence across social networks."
+     data-es="MontaFácil Global fue preparada para generar impacto visual, interacción y presencia digital premium en redes sociales.">
+     A MontaFácil Global foi preparada para gerar impacto visual, engajamento e presença digital premium em redes sociais.
+  </p>
+</section>
+
+<section id="start" class="reveal">
+  <div class="section-header">
+    <span>05</span>
+    <h2 data-pt="Start da Operação" data-en="Operation Start" data-es="Inicio de Operación">Start da Operação</h2>
+  </div>
+
+  <div class="holo-banner">
+    <img src="assets/holograms/holo-start-master.png" alt="Start da operação">
+  </div>
+
+  <div class="start-box">
+    <h3>Fase 1</h3>
+    <p>Landing Page Cinematográfica + estrutura inicial para evolução do MVP funcional.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h2>MONTAFÁCIL GLOBAL</h2>
+
+  <p>
+    “A MontaFácil Global nasce preparada para ser mais do que uma plataforma —
+    nasce preparada para se tornar um ecossistema escalável.”
+  </p>
+
+
+  <div 
+class="contact-links">
+
+  <a
+    href="mailto:montafacilglobal@gmail.com"
+    class="contact-item"
+  >
+    📧 
+montafacilglobal@gmail.com
+  </a>
+
+  <a
+    href="https://wa.me/5565984091524"
+    target="_blank"
+    class="contact-item"
+  >
+    📲 WhatsApp: (65) 
+98409-1524
+  </a>
+
+  </div>
+
+  <div class="footer-contact">
+    <p><strong>Mega 
+Parceria:</strong> Décio 
+Coelho • Curadoria 
+Viracopos • Núcleo de Inovação & IA Generativa • OpenAI • ChatGPT</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="js/motion.js"></script>
+</body>
+</html>
+
+
