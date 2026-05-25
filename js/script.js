@@ -30,3 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function shareSite() {
+  const shareData = {
+    title: "MontaFácil Global",
+    text: "Conheça a MontaFácil Global — Ecossistema Inteligente de Serviços, Logística, Marketplace e IA.",
+    url: "https://deciocoelhogit.github.io/montafacil-global/"
+  };
+
+  if (navigator.share) {
+    navigator.share(shareData);
+  } else {
+    navigator.clipboard.writeText(shareData.url);
+    alert("Link copiado para compartilhar!");
+  }
+}
+
+function copyEmail() {
+  navigator.clipboard.writeText("montafacilglobal@gmail.com");
+  alert("E-mail copiado: montafacilglobal@gmail.com");
+}
