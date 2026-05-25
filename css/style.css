@@ -1227,3 +1227,100 @@ footer {
   padding-top: 22px;
   border-top: 1px solid rgba(212, 175, 55, .35);
 }
+
+/* ==================================================
+   MONTAFÁCIL GLOBAL — CINEMATIC REFINEMENT V1
+   Glow • Motion • Premium Depth
+================================================== */
+
+:root {
+  --mf-blue: #00aeef;
+  --mf-gold: #f5b700;
+  --mf-dark: #05070d;
+  --mf-soft: #f5f7fa;
+  --mf-glow: 0 0 28px rgba(0, 255, 140, 0.45);
+}
+
+/* Fundo vivo premium */
+body {
+  background:
+    radial-gradient(circle at top, rgba(0, 174, 239, 0.16), transparent 38%),
+    radial-gradient(circle at bottom, rgba(245, 183, 0, 0.08), transparent 35%),
+    linear-gradient(180deg, #05070d 0%, #07111f 55%, #03060c 100%);
+  overflow-x: hidden;
+}
+
+/* Logo premium */
+.logo img,
+.hero-logo-main {
+  filter: drop-shadow(0 0 18px rgba(0, 174, 239, 0.6));
+  animation: logoFloat 5s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Hologramas */
+.holo-banner img,
+section img {
+  border-radius: 24px;
+  box-shadow:
+    0 0 24px rgba(0, 255, 140, 0.22),
+    0 0 48px rgba(0, 174, 239, 0.16);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.holo-banner img:hover,
+section img:hover {
+  transform: scale(1.025);
+  box-shadow:
+    0 0 32px rgba(0, 255, 140, 0.42),
+    0 0 72px rgba(245, 183, 0, 0.22);
+}
+
+/* Botões premium */
+button,
+.btn,
+.cta,
+a[class*="btn"] {
+  transition: all .3s ease;
+  box-shadow: var(--mf-glow);
+}
+
+button:hover,
+.btn:hover,
+.cta:hover,
+a[class*="btn"]:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 0 34px rgba(0, 255, 140, 0.65),
+    0 0 60px rgba(0, 174, 239, 0.35);
+}
+
+/* Cards premium */
+.card,
+.feature,
+.kpi,
+.box {
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 255, 140, 0.25);
+  box-shadow: 0 0 28px rgba(0, 174, 239, 0.12);
+}
+
+/* Entrada suave */
+section {
+  animation: fadeUp .8s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
