@@ -1383,4 +1383,80 @@ section {
     #00ffcc;
 }
 
+/* EXTRA PREMIUM — AÇÕES FLUTUANTES */
 
+.floating-actions-extra {
+  position: fixed;
+  left: 18px;
+  bottom: 22px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.float-extra {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,255,170,.45);
+  background: rgba(2,10,20,.88);
+  color: #00ff99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 0 22px rgba(0,255,170,.35);
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.float-extra:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 0 35px rgba(0,255,170,.65);
+}
+
+.cta-orcamento {
+  margin: 70px auto;
+  padding: 42px 22px;
+  max-width: 880px;
+  text-align: center;
+  border-radius: 28px;
+  border: 1px solid rgba(0,255,170,.35);
+  background: linear-gradient(180deg, rgba(0,255,170,.08), rgba(0,174,239,.06));
+  box-shadow: 0 0 45px rgba(0,255,170,.16);
+}
+
+.cta-orcamento h2 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: #fff;
+}
+
+.cta-orcamento p {
+  color: #cfd7e6;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cta-buttons .btn {
+  text-decoration: none;
+  padding: 16px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  color: #001018;
+  background: linear-gradient(90deg, #00eaff, #00ff88);
+}
+
+.cta-buttons .btn:nth-child(2) {
+  color: #f5b700;
+  background: transparent;
+  border: 1px solid rgba(245,183,0,.6);
+}
