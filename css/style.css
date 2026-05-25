@@ -1324,3 +1324,63 @@ section {
     transform: translateY(0);
   }
 }
+
+/* =========================================
+   CONTATOS CLICÁVEIS PREMIUM
+========================================= */
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  margin-top: 20px;
+}
+
+.contact-item {
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 18px;
+
+  border-radius: 18px;
+
+  text-decoration: none;
+
+  color: #ffffff;
+
+  font-weight: 600;
+
+  background:
+    rgba(0,255,170,.08);
+
+  border:
+    1px solid rgba(0,255,170,.28);
+
+  box-shadow:
+    0 0 18px rgba(0,255,170,.12);
+
+  transition:
+    all .35s ease;
+}
+
+.contact-item:hover {
+
+  transform:
+    translateY(-4px)
+    scale(1.02);
+
+  background:
+    rgba(0,255,170,.16);
+
+  box-shadow:
+    0 0 24px rgba(0,255,170,.35),
+    0 0 50px rgba(0,255,170,.12);
+
+  border-color:
+    #00ffcc;
+}
+
+
