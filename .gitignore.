@@ -1,0 +1,6 @@
+.git-credentials
+.bash_history
+.gitconfig
+termux/
+.termux/
+
